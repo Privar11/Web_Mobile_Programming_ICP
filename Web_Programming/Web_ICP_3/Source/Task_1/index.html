@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <title>Rock Paper Scissors</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script><!--Script allow html to use linked javascript -->
+    <link rel="stylesheet" href="style.css"><!-- Linking .css file-->
+</head>
+
+<body style="background-color: rgb(50, 290, 170)" >
+<div class="container-fluid"> <!-- This div has basic display contents and receiving score value from script.js-->
+    <h1>Pick one of the below</h1>
+    <h2 style="text-align: center;">Rock Paper Scissors</h2>
+    <div class="container-fluid" class="row" id="response" style="text-align: center"></div>
+    <div style="text-align: center">
+        <h2><span class="player">Player</span>
+            <span id="score"></span>
+            <span class="computer">Computer</span></h2>
+    </div>
+    <div class="row">
+        <center>
+            <div class="btn-group btn-group-lg" role="group"> <!-- Calling functions defined inn script.js with user's selection as a parameter-->
+                <button type="button" onclick="game('Rock')" class="btn btn-info"><img src="Images/Rock.png" height="300"
+                                                                                         width="300"/></button>
+                <button type="button" onclick="game('Paper')" class="btn btn-info"><img src="Images/Paper.png" height="300"
+                                                                                          width="300"/></button>
+                <button type="button" onclick="game('Scissors')" class="btn btn-info"><img src="Images/Scissors.png" height="300"
+                                                                                             width="300"/></button>
+            </div>
+        </center>
+    </div>
+</div>
+<script src="script.js"></script><!--Linking Java script-->
+</body>
+</html>
+
